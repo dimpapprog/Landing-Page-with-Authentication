@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaFlow — Smart Team Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <span class="brand-mark">N</span>
+          <span class="brand-copy">
+            <strong>NovaFlow</strong>
+            <small>Smart Team Workspace</small>
+          </span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="#features">Features</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="ghost-btn" id="openLoginBtn">Sign in</button>
+          <button class="primary-btn" id="openSignupBtn">Start free trial</button>
+          <button class="menu-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Features</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <button class="ghost-btn full-width" id="mobileLoginBtn">Sign in</button>
+        <button class="primary-btn full-width" id="mobileSignupBtn">Start free trial</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Modern SaaS Landing Experience</p>
+            <h1>Bring projects, team updates, and customer conversations into one clean workspace.</h1>
+            <p class="hero-text">A premium landing and authentication flow built for a modern software product. Designed with polished UI, responsive layouts, and smooth interactions inspired by high-end SaaS platforms.</p>
+
+            <div class="hero-actions">
+              <button class="primary-btn" id="heroStartBtn">Start free trial</button>
+              <button class="secondary-btn" id="heroDemoBtn">Book a demo</button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <strong>12k+</strong>
+                <span>active teams</span>
+              </div>
+              <div class="stat-card">
+                <strong>99.9%</strong>
+                <span>uptime</span>
+              </div>
+              <div class="stat-card">
+                <strong>34%</strong>
+                <span>faster delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="dashboard-card glass">
+              <div class="dashboard-top">
+                <div>
+                  <p class="eyebrow">Workspace Overview</p>
+                  <h3>Marketing Launch</h3>
+                </div>
+                <span class="status-pill success">On track</span>
+              </div>
+
+              <div class="mini-kpis">
+                <div class="mini-kpi">
+                  <span>Tasks completed</span>
+                  <strong>84%</strong>
+                </div>
+                <div class="mini-kpi">
+                  <span>Team activity</span>
+                  <strong>+18%</strong>
+                </div>
+              </div>
+
+              <div class="chart-area">
+                <div class="chart-bars">
+                  <span style="height:42%"></span>
+                  <span style="height:64%"></span>
+                  <span style="height:53%"></span>
+                  <span style="height:74%"></span>
+                  <span style="height:91%"></span>
+                  <span style="height:86%"></span>
+                  <span style="height:100%"></span>
+                </div>
+              </div>
+
+              <div class="team-list">
+                <div class="team-row">
+                  <div class="team-user"><span class="avatar">A</span><div><strong>Alex Morgan</strong><small>Design review completed</small></div></div>
+                  <span class="chip">Done</span>
+                </div>
+                <div class="team-row">
+                  <div class="team-user"><span class="avatar">J</span><div><strong>Julia Chen</strong><small>Updated onboarding flow</small></div></div>
+                  <span class="chip soft">In progress</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card glass">
+              <span>New enterprise lead</span>
+              <strong>NorthGrid Labs</strong>
+              <small>Added 5 minutes ago</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-strip">
+        <div class="container logo-list">
+          <span>LayerOne</span>
+          <span>Cobalt</span>
+          <span>NorthGrid</span>
+          <span>PixelForge</span>
+          <span>Clario</span>
+        </div>
+      </section>
+
+      <section class="features-section section-spacing" id="features">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Core Features</p>
+            <h2>Everything teams need to collaborate and move faster.</h2>
+            <p>Clean components, strong hierarchy, and modern product-focused layouts designed to feel premium across devices.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon-badge">✦</div>
+              <h3>Project visibility</h3>
+              <p>Track timelines, updates, and team progress inside one elegant dashboard experience.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon-badge">◎</div>
+              <h3>Shared workspace</h3>
+              <p>Centralize team communication, notes, and decisions with a structured UI system.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon-badge">◌</div>
+              <h3>Customer collaboration</h3>
+              <p>Connect project delivery with customer touchpoints, feedback loops, and account updates.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions-section section-spacing" id="solutions">
+        <div class="container solution-grid">
+          <div class="solution-copy reveal">
+            <p class="eyebrow">Built for modern product teams</p>
+            <h2>From landing page to authentication flow, the experience stays polished and consistent.</h2>
+            <p>This demo includes a premium SaaS landing page plus modal-based sign in, sign up, forgot password, session handling, and a simple logged-in state.</p>
+
+            <ul class="feature-list">
+              <li>Responsive landing page with structured sections</li>
+              <li>Sign in and sign up flow with client-side validation</li>
+              <li>Forgot password state inside the auth modal</li>
+              <li>Demo session handling using localStorage</li>
+              <li>Logged-in header state with logout action</li>
+            </ul>
+          </div>
+
+          <div class="solution-panel glass reveal">
+            <div class="panel-window">
+              <div class="window-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="window-body">
+                <div class="window-left">
+                  <small>Weekly growth</small>
+                  <strong>+24.8%</strong>
+                  <p>Better onboarding and cleaner product journeys improved activation.</p>
+                </div>
+                <div class="window-right">
+                  <div class="window-metric">
+                    <span>Activation</span>
+                    <strong>68%</strong>
+                  </div>
+                  <div class="window-metric">
+                    <span>Retention</span>
+                    <strong>91%</strong>
+                  </div>
+                  <div class="window-metric">
+                    <span>Leads</span>
+                    <strong>1.2k</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section section-spacing" id="pricing">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Pricing</p>
+            <h2>Simple plans for growing teams.</h2>
+            <p>Clear pricing cards designed to support a premium software product layout.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <span class="plan-label">Starter</span>
+              <h3>$19<span>/mo</span></h3>
+              <p>For individuals and small projects getting started.</p>
+              <ul>
+                <li>Up to 5 team members</li>
+                <li>Shared workspace</li>
+                <li>Email support</li>
+              </ul>
+              <button class="secondary-btn full-width open-signup">Choose plan</button>
+            </article>
+
+            <article class="price-card featured reveal">
+              <span class="featured-badge">Most Popular</span>
+              <span class="plan-label">Growth</span>
+              <h3>$49<span>/mo</span></h3>
+              <p>For teams that need collaboration, analytics, and faster workflows.</p>
+              <ul>
+                <li>Unlimited projects</li>
+                <li>Advanced team views</li>
+                <li>Priority support</li>
+              </ul>
+              <button class="primary-btn full-width open-signup">Start free trial</button>
+            </article>
+
+            <article class="price-card reveal">
+              <span class="plan-label">Enterprise</span>
+              <h3>Custom</h3>
+              <p>For larger organizations with tailored onboarding and governance.</p>
+              <ul>
+                <li>Custom permissions</li>
+                <li>Dedicated success manager</li>
+                <li>SSO & security controls</li>
+              </ul>
+              <button class="secondary-btn full-width">Contact sales</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section section-spacing" id="reviews">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Reviews</p>
+            <h2>Designed to feel like a real product experience.</h2>
+            <p>A polished presentation layer that fits portfolio, client demos, or product concept work.</p>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card reveal">
+              <p>“The overall presentation feels sharp, lightweight, and ready for a live SaaS environment.”</p>
+              <div class="review-user"><span class="avatar">M</span><div><strong>Mila Adams</strong><small>Product Manager</small></div></div>
+            </article>
+            <article class="review-card reveal">
+              <p>“A strong example of a premium front-end system with consistency from landing page to auth flow.”</p>
+              <div class="review-user"><span class="avatar">D</span><div><strong>Daniel Ross</strong><small>Design Lead</small></div></div>
+            </article>
+            <article class="review-card reveal">
+              <p>“The visual hierarchy, spacing, and interactions make it feel much closer to a real client product.”</p>
+              <div class="review-user"><span class="avatar">S</span><div><strong>Sofia Reed</strong><small>Growth Consultant</small></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section section-spacing">
+        <div class="container">
+          <div class="cta-card glass reveal">
+            <div>
+              <p class="eyebrow">Ready to explore the experience?</p>
+              <h2>Open the authentication flow and try the demo session.</h2>
+            </div>
+            <button class="primary-btn" id="ctaSignupBtn">Launch demo</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="authBackdrop"></div>
+  <div class="auth-modal hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="modal-close" id="closeAuthBtn" aria-label="Close">✕</button>
+
+    <div class="auth-layout">
+      <div class="auth-side">
+        <div class="auth-side-inner">
+          <p class="eyebrow light">Premium Access</p>
+          <h2>Welcome to NovaFlow.</h2>
+          <p>Access your workspace, manage team activity, and continue where you left off with a polished authentication experience.</p>
+
+          <div class="auth-side-cards">
+            <div class="auth-note">
+              <strong>Fast onboarding</strong>
+              <span>Built to feel clean, modern, and product-ready.</span>
+            </div>
+            <div class="auth-note">
+              <strong>Demo session flow</strong>
+              <span>Includes sign in, sign up, forgot password, and logout.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-panel">
+        <div class="auth-tabs">
+          <button class="tab-btn active" data-view="signin">Sign in</button>
+          <button class="tab-btn" data-view="signup">Sign up</button>
+        </div>
+
+        <div id="authMessage" class="auth-message hidden"></div>
+
+        <form class="auth-form" id="signInForm" data-view="signin">
+          <div class="form-head">
+            <h3 id="authTitle">Sign in to your account</h3>
+            <p>Use the demo account below or create a new one locally.</p>
+          </div>
+
+          <div class="field">
+            <label for="signinEmail">Email</label>
+            <input id="signinEmail" type="email" placeholder="you@company.com" />
+          </div>
+
+          <div class="field">
+            <label for="signinPassword">Password</label>
+            <div class="password-wrap">
+              <input id="signinPassword" type="password" placeholder="Enter your password" />
+              <button type="button" class="toggle-pass" data-target="signinPassword">Show</button>
+            </div>
+          </div>
+
+          <div class="row-between">
+            <label class="check-row">
+              <input type="checkbox" id="rememberMe" />
+              <span>Remember me</span>
+            </label>
+            <button type="button" class="text-link" id="openForgotBtn">Forgot password?</button>
+          </div>
+
+          <button type="submit" class="primary-btn full-width">Sign in</button>
+
+          <div class="demo-box">
+            <strong>Demo account</strong>
+            <span>Email: demo@novaflow.com</span>
+            <span>Password: Demo123!</span>
+          </div>
+        </form>
+
+        <form class="auth-form hidden" id="signUpForm" data-view="signup">
+          <div class="form-head">
+            <h3>Create your account</h3>
+            <p>Set up a local demo account and enter the logged-in state instantly.</p>
+          </div>
+
+          <div class="field">
+            <label for="signupName">Full name</label>
+            <input id="signupName" type="text" placeholder="Your full name" />
+          </div>
+
+          <div class="field">
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" placeholder="name@company.com" />
+          </div>
+
+          <div class="field">
+            <label for="signupPassword">Password</label>
+            <div class="password-wrap">
+              <input id="signupPassword" type="password" placeholder="Create a password" />
+              <button type="button" class="toggle-pass" data-target="signupPassword">Show</button>
+            </div>
+          </div>
+
+          <button type="submit" class="primary-btn full-width">Create account</button>
+        </form>
+
+        <form class="auth-form hidden" id="forgotForm" data-view="forgot">
+          <div class="form-head">
+            <h3>Reset your password</h3>
+            <p>Enter your email and simulate a password reset confirmation.</p>
+          </div>
+
+          <div class="field">
+            <label for="forgotEmail">Email</label>
+            <input id="forgotEmail" type="email" placeholder="you@company.com" />
+          </div>
+
+          <button type="submit" class="primary-btn full-width">Send reset link</button>
+          <button type="button" class="text-link back-link" id="backToSignInBtn">Back to sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="session-toast hidden" id="sessionToast">
+    <div>
+      <strong id="toastTitle">Welcome back</strong>
+      <span id="toastText">You are now signed in.</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
